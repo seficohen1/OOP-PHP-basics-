@@ -54,12 +54,12 @@ class Lamborghini extends Car {
 }
 
 // defining an abtract class to be used in the next class
-abstract class PublicTrasnportationCar extends Car {
+abstract class PublicTrasportationCar extends Car {
   abstract function getLicense();
   public $permitedCities = [];
 }
 
-class UberCar extends PublicTrasnportationCar {
+class UberCar extends PublicTrasportationCar {
   function getLicense()
   {
     return 'Public transport';
