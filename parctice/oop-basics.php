@@ -39,7 +39,7 @@ class Lamborghini extends Car {
   }
 
   public function horn() {
-    echo 'beeeeep - but in classy way';
+    echo 'beeeeep - but in a classy way';
   }
 
   public function startCar()
@@ -69,7 +69,7 @@ class UberCar extends Taxi {
 }
 
 //  defining interface to be implemented in the next class
-interface SpecailACtions {
+interface SpecailActions {
   public function turnSeatHeating();
   public function turnAutoDriveMode();
  }
