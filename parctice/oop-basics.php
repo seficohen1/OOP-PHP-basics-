@@ -52,3 +52,18 @@ class Lamborghini extends Car {
   public $isSUV = true;
 
 }
+
+// defining an abtract class to be used in the next class
+abstract class Taxi extends Car {
+  abstract function getLicense();
+  public $permitedCities = [];
+}
+
+class UberCar extends Taxi {
+  function getLicense()
+  {
+    return 'Public transport';
+  }
+  public $permitedCities = ['Madrid', 'Barcelona'];
+
+}
