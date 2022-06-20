@@ -29,3 +29,26 @@ class Car {
     echo 'destructing car';
   }
 }
+
+//  defining a class that inherits Car class having new and overriden porperties and mothods
+class Lamborghini extends Car {
+  function __construct(string $brandType, string $engine, string $color, bool $isLuxary)
+  {
+    parent::__construct($brandType, $engine, $color);
+    $this->isLuxary = $isLuxary;
+  }
+
+  public function horn() {
+    echo 'beeeeep - but in classy way';
+  }
+
+  public function startCar()
+  {
+    echo 'vvooooom voooommm';
+  }
+
+  static $carPlate = '775-558-457';
+
+  public $isSUV = true;
+
+}
