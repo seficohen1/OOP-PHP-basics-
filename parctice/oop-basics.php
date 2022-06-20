@@ -67,3 +67,19 @@ class UberCar extends Taxi {
   public $permitedCities = ['Madrid', 'Barcelona'];
 
 }
+
+//  defining interface to be implemented in the next class
+interface SpecailACtions {
+  public function turnSeatHeating();
+  public function turnAutoDriveMode();
+ }
+
+
+class Tesla extends Car implements SpecailACtions {
+  public function turnSeatHeating(){
+    return 'Seat Heating is on now';
+  }
+  public function turnAutoDriveMode() {
+    return 'Auto driving in on, you can sit back and enjoy the ride';
+  }
+}
